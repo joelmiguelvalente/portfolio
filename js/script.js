@@ -81,23 +81,22 @@
 		localStorage.setItem('idioma', ln)
 		// Generamos la petición
 		const newurl = location.origin + location.pathname;
-		const getLang = await fetch(`${newurl}langs/${ln}.json`)
+		const getLang = await fetch(`${newurl}lang.json`)
 		const getData = await getLang.json()
 		// Asignamos el texto correspondiente a la posicion
-		element('.ln_data_soy').innerHTML = '';
-		Object.keys(getData.data).map((key, value) => {
+		element('.lgdatasoy').innerHTML = '';
+		Object.keys(getData[ln].data).map((key, value) => {
 			let nKey = "." + key;
-			let nVal = getData.data[key];
-			let type = key.split('_')[1];
-			if(type === 'alt') {
+			let nVal = getData[ln].data[key];
+			if(key.slice(0, 3) === 'alt') {
 				element(nKey).setAttribute('alt', nVal);
 				element(nKey).setAttribute('title', nVal);
 			} 
-			else if(type === 'data') document.querySelector(nKey).setAttribute('data-items', nVal);
-			else if(type === 'html') element(nKey).innerHTML = nVal;
+			else if(key.slice(2, 6) === 'data') element(nKey).setAttribute('data-items', nVal);
+			else if(key.slice(0, 2) === 'lg') element(nKey).innerHTML = nVal;
 		})
-		new Typed('.ln_data_soy', {
-			strings: getData.data.ln_data_soy.split(','),
+		new Typed('.lgdatasoy', {
+			strings: getData[ln].data.lgdatasoy.split(','),
 			typeSpeed: 100,
 			backSpeed: 50,
 			backDelay: 2000,
