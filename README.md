@@ -41,24 +41,5 @@ Se puede seleccionar entre 4 idiomas
 [@didiofederico_photographer]: https://unsplash.com/@didiofederico_photographer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 [urlunsplash]: https://unsplash.com/es/s/fotos/codigo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 
-### Otros repositorios (Oracle Next Education)
- * 🗄 [Encriptador v1](https://github.com/joelmiguelvalente/challengeencriptador) - ChallengeOne
- * 🗄 [Ahorcado v1](https://github.com/joelmiguelvalente/ahorcado) - ChallengeOne
-
-### Otros repositorios (Alternos)
- * 🗄 [Encriptador v2](https://github.com/joelmiguelvalente/encriptador/tree/main)
- * 🗄 [Encriptador v3](https://github.com/joelmiguelvalente/encriptador)
- * 🗄 [Ahorcado v2](https://github.com/joelmiguelvalente/ahorcadov2)
-
-### Páginas
- * 🔗 [Portfolio](https://joelmiguelvalente.github.io/porfolio/) 
- * 🔗 [Encriptador v1](https://joelmiguelvalente.github.io/challengeencriptador/) 
- * 🔗 [Encriptador v2](https://exquisite-moonbeam-680e7e.netlify.app/) 
- * 🔗 [Encriptador v3](https://joelmiguelvalente.github.io/encriptador/)
- * 🔗 [Ahorcado v2](https://joelmiguelvalente.github.io/ahorcadov2/)
- * 🔗 [Barbería Alura](https://joelmiguelvalente.github.io/barberiaalura/) 
-
 ### Redes 
- * 💻 [Linkedin](https://www.linkedin.com/in/joelmiguelvalente)
  * 💻 [Discord](https://discord.com/users/465203938900049920)
- * 💻 [Twitter](https://twitter.com/JvalenteM92)
