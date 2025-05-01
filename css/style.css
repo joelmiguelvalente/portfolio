@@ -10,31 +10,17 @@
 :root {
 	--white: 255,255,255;
 	--black: 0,0,0;
-
 	--primary: 30,30,47; 
 	--primary-hover: 18,18,34;
-
 	--body-bg: 249,249,249;
 	--body-color: 33,33,33;
-
 	--link: 40,40,80;
 	--link-hover: 60,60,100;
-
-	--danger-color: 42,0,0;
-	--danger-bg: 255,124,124;
-
-	--secondary-color: 34,34,34;
-	--secondary-bg: 230,230,230;
-
-	--success-color: 0,43,0;
-	--success-bg: 124,255,180;
-
 	/* Redes sociales */
 	--discord: 88,101,242;
 	--github: 11,11,11;
 	--linkedin: 0,123,182;
 	--twitter: 0,0,0;
-
 	--fuente: system-ui, -apple-system, "Segoe UI", "Inter", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	--mode-change: url('../images/icons/moon.svg') no-repeat center / cover;
 }
@@ -42,21 +28,10 @@
 [data-theme="dark"] {
 	--link: 140,140,180;
 	--link-hover: 160,160,200;
-
 	--primary: 230,230,247; 
 	--primary-hover: 218,218,234;
-
 	--body-bg: 33,33,33;
 	--body-color: 249,249,249;
-
-	--danger-bg: 42,0,0;
-	--danger-color: 255,124,124;
-
-	--secondary-bg: 34,34,34;
-	--secondary-color: 230,230,230;
-
-	--success-bg: 0,43,0;
-	--success-color: 124,255,180;
 	--github: 110,110,100;
 	--twitter: 255,255,255;
 }
@@ -112,7 +87,6 @@ a {
 .block{display: block;}
 .none{display: none;}
 .grid{display: grid;}
-
 .content-start{justify-content: flex-start;}
 .content-end{justify-content: flex-end;}
 .content-center{justify-content: center;}
@@ -121,36 +95,27 @@ a {
 .items-center{align-items: center;}
 .column-gap-8{column-gap: .5rem;}
 .column-gap-16{column-gap: 1rem;}
-
 .fixed{position: fixed;}
 .absolute{position: absolute;}
 .relative{position: relative;}
-
 .pe-none{pointer-events: none;}
-
 .rounded{border-radius: .325rem}
-
 .size-16{widht: 1rem;height: 1rem;}
 .size-24{widht: 1.5rem;height: 1.5rem;}
 .size-32{widht: 2rem;height: 2rem;}
 .size-full{widht: 100%;height: 100%;}
-
 .widht-16{widht: 1rem;}
 .widht-24{widht: 1.5rem;}
 .widht-32{widht: 2rem;}
 .widht-full{widht: 100%;}
-
 .height-16{height: 1rem;}
 .height-24{height: 1.5rem;}
 .height-32{height: 2rem;}
 .height-full{height: 100%;}
-
 .aspect-ratio-1x1 {aspect-ratio: 1 / 1;}
-
 .text-left{text-align: left;}
 .text-center{text-align: center;}
 .text-right{text-align: right;}
-
 .back-to-top {
 	bottom: 1rem;
 	right: 1rem;
@@ -239,17 +204,6 @@ nav {
 	z-index: 9;
 	/* BRAND */
 	.brand {
-		.menu-toggle {
-			background: url('../images/icons/menu/toggle-open.svg') no-repeat center / cover;
-			@media (width < 560px) {
-				& {
-					display: block;
-				}
-			}
-			&.open {
-				background: url('../images/icons/menu/toggle-close.svg') no-repeat center / cover;
-			}
-		}
 		.logo {
 			font-weight: 600;
 			font-size: 1.5rem;
@@ -458,21 +412,20 @@ footer {
 	}
 }
 
-
 /* Grid */
-.grid {
+.grid-columns {
 	--columns: 1fr;
 	grid-template-columns: var(--columns);
 	gap: 1.5rem;
 }
 
 @media (width >= 768px) {
-	.grid {
+	.grid-columns {
 	--columns: 1fr 1fr;
 	}
 }
 @media (width >= 1024px) {
-	.grid {
+	.grid-columns {
 		--columns: 1fr 1fr 1fr;
 	}
 }

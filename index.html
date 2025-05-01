@@ -10,22 +10,21 @@
 <meta name="images" content="./images/jmv_256.webp"/>
 <meta name="theme-color" content="#333333"/>
 <meta name="language" content="Spanish"/>
-<meta name="revisit-after" content="3 days"/>
+<meta name="revisit-after" content="10 days"/>
 <meta name="author" content="Miguel92"/>
 <title>Porfolio — JMV</title>
 <!-- ======= Cargamos los estilos ======= -->
-<link href="css/style.css?v1.0.0" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
 <link href="css/swiper.min.css" rel="stylesheet">
 <!-- ======= Cargamos todos los scrits ======= -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
 <script src="js/app.js" defer></script>
 <script src="js/swiper.js" type="module" defer></script>
 </head>
 <body>
-	<main class="">
+	<main>
 		<nav class="rounded fixed flex content-start items-center column-gap-8">
 			<div class="brand flex content-start items-center column-gap-8">
-				<div class="menu-toggle aspect-ratio-1x1 none size-24 text-center"></div>
 				<h1 class="logo height-32 flex content-start items-center column-gap-8">
 					<img src="./images/jmv_64.webp" alt="Portfolio" class="aspect-ratio-1x1 rounded height-32">
 					<span>Portfolio</span>
@@ -70,16 +69,6 @@
 				<small>Desarrollador Back-End, Front-End / Diseñador web</small>
 			</div>
 		</header>
-		<!-- 
-			1. Inicio
-			2. Sobre mí
-			3. Servicios
-			4. Proyectos
-			5. Opiniones (opcional)
-			6. Blog (opcional)
-			7. Contacto
-		-->
-
 		<!-- ======= Section: Sobre Mi ======= -->
 		<section id="sobre-mi" class="flex justify-center items-center">
 			<div class="contenedor contenedor-sobre-mi flex items-center">
@@ -100,7 +89,7 @@
 			<div class="head_section">
 				<h2>Trabajos</h2>
 			</div>
-		  	<div class="grid">
+		  	<div class="grid grid-columns">
 		   	<!-- ZCode -->
 		   	<div class="card rounded observer">
 		   		<h3 class="card-title">ZCode</h3>
@@ -191,7 +180,7 @@
 			<div class="head_section">
 				<h2>Habilidades</h2>
 			</div>
-		  	<div class="grid">
+		  	<div class="grid grid-columns">
 		   	<div class="card rounded observer">
 		   		<svg-icon class="pe-none block" name="./images/icons/tech/php.svg"></svg-icon>
 		   		<h3 class="card-title">PHP</h3>
