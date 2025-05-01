@@ -43,6 +43,9 @@
 	--link: 140,140,180;
 	--link-hover: 160,160,200;
 
+	--primary: 230,230,247; 
+	--primary-hover: 218,218,234;
+
 	--body-bg: 33,33,33;
 	--body-color: 249,249,249;
 
@@ -187,8 +190,8 @@ h2 {
 	color: rgb(var(--primary));
 }
 p {
-  	margin-bottom: 1rem;
-  	font-size: 1.1rem;
+	margin-bottom: 1rem;
+	font-size: 1.1rem;
 }
 
 /* HEADER */
@@ -306,7 +309,7 @@ footer {
 	padding: 2rem 0;
 	flex-direction: column;
 	.footer_socials {
-		margin: .5rem 0;
+		margin: 1rem 0;
 		.social {
 			padding-top: 0.325rem;
 			&.linkedin {
@@ -365,7 +368,7 @@ footer {
 /* Estilos generales */
 #sobre-mi {
 	min-height: 100dvh;
-  	padding: 3rem 2rem;
+	padding: 3rem 2rem;
 	.contenedor-sobre-mi {
 		flex-direction: row;
 		gap: 2rem;
@@ -378,23 +381,23 @@ footer {
 	}
 	.info-sobre-mi {
 		max-width: 800px;
-	  	line-height: 1.6;
+		line-height: 1.6;
 	}
 	/* Responsividad */
 	@media (width <= 1024px) {
-	  	.contenedor-sobre-mi {
-	    	flex-direction: column;
-	  	}
-	  	.foto-sobre-mi img {
-	    	margin-bottom: 1rem;
-	  	}
+		.contenedor-sobre-mi {
+			flex-direction: column;
+		}
+		.foto-sobre-mi img {
+			margin-bottom: 1rem;
+		}
 	}
 }
 
 .button {
 	appearance: none;
 	background-color: rgb(var(--primary));
-	color: rgb(var(--white));
+	color: rgb(var(--body-bg));
 	border: none;
 	padding: 0.8rem 1.5rem;
 	font-size: 1rem;
@@ -460,29 +463,26 @@ footer {
 .grid {
 	--columns: 1fr;
 	grid-template-columns: var(--columns);
-  	gap: 1.5rem;
+	gap: 1.5rem;
 }
 
 @media (width >= 768px) {
-  	.grid {
-    --columns: 1fr 1fr;
-  	}
+	.grid {
+	--columns: 1fr 1fr;
+	}
 }
 @media (width >= 1024px) {
-  	.grid {
-    	--columns: 1fr 1fr 1fr;
-  	}
+	.grid {
+		--columns: 1fr 1fr 1fr;
+	}
 }
 
 /* Card */
 .card {
-	background-color: white;
+	border: 1px solid rgba(var(--primary), .2);
 	padding: 1rem;
-	box-shadow: 0 4px 6px rgba(var(--primary), 0.1);
 	transition: box-shadow 0.3s ease;
-	&:hover {
-		box-shadow: 0 6px 12px rgba(var(--primary), 0.15);
-	}
+	color: rgb(var(--body-color));
 	svg-icon {
 		margin: 0 auto;
 		width: 4rem!important;
@@ -490,13 +490,13 @@ footer {
 		aspect-ratio: 1 /1;
 	}
 	.card-title {
-	  	font-size: 1.25rem;
-	  	font-weight: 600;
-	  	margin-bottom: 0.5rem;
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin-bottom: 0.5rem;
 	}
 	.card-description {
-	  	font-size: 1rem;
-	  	margin-bottom: 0.75rem;
+		font-size: 1rem;
+		margin-bottom: 0.75rem;
 	}
 }
 /* Badge */
@@ -523,13 +523,13 @@ footer {
 		font-size: 1rem;
 		font-weight: 600;
 		margin-bottom: 0.5rem;
-		color: #333;
+		color: rgb(var(--body-color));
 	}
 	.form-input {
 		padding: 1rem;
 		font-size: 1rem;
 		border: 1px solid rgba(var(--primary), .6);
-		background-color: rgb(var(--white));
+		background-color: rgba(var(--primary), .1);
 		color: rgba(var(--primary),1);
 		width: 100%;
 		&:focus {
