@@ -123,23 +123,7 @@ a {
 		pointer-events: none;
 	}
 }
-
-.swiper {
-	width: 100%;
-	padding-top: 50px;
-	padding-bottom: 25px;
-	overflow: hidden;
-	z-index: 1;
-	.swiper-slide {
-		background-position: center;
-		background-size: cover;
-		width: 70%;
-		height: 320px;
-		img {
-			object-fit: cover;
-		}
-	}
-}
+.shadow{box-shadow: 0 0 .5rem rgba(var(--black), .1);}
 .observer {
 	opacity: 0;
 	transform: translateY(20px);
@@ -170,6 +154,22 @@ p {
 	font-size: 1.1rem;
 }
 
+.toggleMode {
+	bottom: 1rem;
+	left: 1rem;
+	z-index: 9;
+	.toggle {
+		width: 2rem;
+		height: 2rem;
+		cursor: pointer;
+		background: url('../images/icons/moon.svg') no-repeat center / cover;
+		[data-theme="dark"] & {
+			filter: invert(100%);
+			background: url('../images/icons/sun.svg') no-repeat center / cover;
+		}
+	}
+}
+
 /* HEADER */
 header {
 	height: 100dvh;
@@ -192,10 +192,11 @@ header {
 			font-size: 3rem;
 			line-height: 2rem;
 		}
-		> div {
-			font-size: 3rem;
-			line-height: 3rem;
+		> div strong {
+			font-size: clamp(1.8rem, 2.5vw, 3rem);
+			line-height: clamp(2rem, 2.5vw, 3rem);
 			margin: 1rem 0;
+			text-wrap: pretty;
 		}
 	}
 }
@@ -209,62 +210,62 @@ nav {
 		transition: background .4s ease-in-out;
 	}
 	left: 0;
+	right: 0;
 	padding: 1rem 2rem;
-	top: 0;
-	width: 100%;
+	width: max-content;
+	margin: 1rem auto auto auto;
 	z-index: 9;
-	/* BRAND */
-	.brand {
-		.logo {
-			font-weight: 600;
-			font-size: 1.5rem;
-			padding-right: 1rem;
-			img {
-				width: 2rem;
-				background: rgba(var(--body-bg), .2);
-			}
-		}
-		@media (width <= 992px) {
-			.logo {
-				span {
-					display: none;
-				}
-			}
+	.menu-link {
+		padding: 0 .5rem;
+		line-height: 2rem;
+		color: rgb(var(--body-color));
+		font-weight: 600;
+		&:hover, &.active {
+			color: rgb(var(--primary-hover));
+			background: rgba(var(--primary-hover), .1);
 		}
 	}
-	/* MENU */
-	.menu {
-		flex-grow: 1;
+	@media (width <= 768px) {
 		.menu-link {
-			padding: 0 .5rem;
-			line-height: 2rem;
-			color: rgb(var(--body-color));
-			&:hover, &.active {
-				color: rgb(var(--primary-hover));
-				background: rgba(var(--primary-hover), .1);
-				span {
-					font-weight: 600;
-				}
-			}
-		}
-		@media (width <= 768px) {
-			.menu-link {
-				span {
-					display: none;
-				}
+			span {
+				display: none;
 			}
 		}
 	}
-	/* LANG | MODO DARK-LIGHT */
-	.menu-right {
-		[data-change-mode] {
-			display: block;
-			width: 2rem;
-			height: 2rem;
-			background: url('../images/icons/moon.svg') no-repeat center / cover;
-			[data-theme="dark"] & {
-				filter: invert(100%);
-				background: url('../images/icons/sun.svg') no-repeat center / cover;
+
+}
+
+@media (width <= 560px) {
+	nav {
+		padding: 1rem;
+		border-radius: 0!important;
+		/* MENU */
+		.menu {
+			position: fixed;
+			top: 4rem;
+			left: -100%;
+			min-width: 500px!important;
+			min-width: 400px!important;
+			height: calc(100dvh - 4rem);
+			padding: 1rem;
+			align-items: flex-start;
+			flex-direction: column;
+			background: rgba(var(--body-bg), 1);
+			transition: left .4s ease-in-out;
+			&.open {
+				left: 0;
+				transition: left .4s ease-in-out;
+			}
+			.menu-link {
+				width: 100%;
+				justify-content: flex-start;
+				align-items: flex-start;
+				padding: .5rem 1rem;
+				margin-bottom: 0.5rem;
+				height: auto;
+				span {
+					display: block;
+				}
 			}
 		}
 	}
@@ -476,29 +477,24 @@ footer {
 /* Estilos del formulario de contacto */
 #contact-form {
 	display: grid;
-	gap: 1.5rem;
+	gap: .875rem;
 	max-width: 600px;
 	margin: 0 auto;
-}
-.form-group {
-	display: flex;
-	flex-direction: column;
-	.form-label {
-		font-size: 1rem;
-		font-weight: 600;
-		margin-bottom: 0.5rem;
-		color: rgb(var(--body-color));
-	}
-	.form-input {
+	.form-group {
 		padding: 1rem;
-		font-size: 1rem;
-		border: 1px solid rgba(var(--primary), .6);
-		background-color: rgba(var(--primary), .1);
-		color: rgba(var(--primary),1);
-		width: 100%;
-		&:focus {
-			outline: none;
-			border-color: rgba(var(--primary), .9);
+		label {
+			font-weight: 600;
+		}
+		input, textarea {
+			display: block;
+			width: 100%;
+			font-size: 1rem;
+			padding: .875rem 1rem;
+			background: rgba(var(--primary), .1);
+			color: rgb(var(--body-color));
+			&:focus {
+				box-shadow: 0 0 .5rem rgba(var(--black), .1);
+			}
 		}
 	}
 }

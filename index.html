@@ -13,58 +13,43 @@
 <meta name="revisit-after" content="10 days"/>
 <meta name="author" content="Miguel92"/>
 <title>Porfolio — JMV</title>
-<!-- ======= Cargamos los estilos ======= -->
 <link href="css/style.css" rel="stylesheet">
-<link href="css/swiper.min.css" rel="stylesheet">
-<!-- ======= Cargamos todos los scrits ======= -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
 <script src="js/app.js" defer></script>
-<script src="js/swiper.js" type="module" defer></script>
 </head>
 <body>
 	<main>
 		<nav class="rounded fixed flex content-start items-center column-gap-8">
-			<div class="brand flex content-start items-center column-gap-8">
-				<h1 class="logo height-32 flex content-start items-center column-gap-8">
-					<img src="./images/jmv_64.webp" alt="Portfolio" class="aspect-ratio-1x1 rounded height-32">
-					<span>Portfolio</span>
-				</h1>
-			</div>
-			<div class="menu menu-collapse flex content-start items-center column-gap-8">
-				<a href="#inicio" class="menu-link height-32 flex content-center items-center column-gap-8 rounded active" data-link alt="Seccion de Inicio">
-					<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/home.svg"></svg-icon>
-					<span>Inicio</span>
-				</a>
-				<a href="#sobre-mi" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Sobre mi">
-					<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/about.svg"></svg-icon>
-					<span>Sobre mi</span>
-				</a>
-				<a href="#trabajos" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Trabajos">
-					<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/work.svg"></svg-icon>
-					<span>Trabajos</span>
-				</a>
-				<a href="#proyectos" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Proyectos">
-					<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/projects.svg"></svg-icon>
-					<span>Proyectos</span>
-				</a>
-				<a href="#habilidades" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Habilidades">
-					<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/code.svg"></svg-icon>
-					<span>Habilidades</span>
-				</a>
-				<a href="#contacto" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Contacto">
-					<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/contact.svg"></svg-icon>
-					<span>Contacto</span>
-				</a>
-			</div>
-			<div class="menu-right flex content-end items-center column-gap-16">
-				<div data-change-mode class="block size-32"></div>
-			</div>
+			<a href="#inicio" class="menu-link height-32 flex content-center items-center column-gap-8 rounded active" data-link alt="Seccion de Inicio">
+				<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/home.svg"></svg-icon>
+				<span>Inicio</span>
+			</a>
+			<a href="#sobre-mi" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Sobre mi">
+				<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/about.svg"></svg-icon>
+				<span>Sobre mi</span>
+			</a>
+			<a href="#trabajos" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Trabajos">
+				<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/work.svg"></svg-icon>
+				<span>Trabajos</span>
+			</a>
+			<a href="#proyectos" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Proyectos">
+				<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/projects.svg"></svg-icon>
+				<span>Proyectos</span>
+			</a>
+			<a href="#habilidades" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Habilidades">
+				<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/code.svg"></svg-icon>
+				<span>Habilidades</span>
+			</a>
+			<a href="#contacto" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Contacto">
+				<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/contact.svg"></svg-icon>
+				<span>Contacto</span>
+			</a>
 		</nav>
 		<header id="inicio">
 			<div class="box text-center">
 				<h1>Soy <strong>Joel M. Valente</strong>!</h1>
 				<div class="flex content-center items-center column-gap-8">
-					<strong id="hack">Programador</strong>
+					<strong id="hack" data-list="Programador,Desarrollador,Entusiasta en PHP,Autodidacta,Curioso por naturaleza">Programador</strong>
 				</div>
 				<small>Desarrollador Back-End, Front-End / Diseñador web</small>
 			</div>
@@ -73,7 +58,7 @@
 		<section id="sobre-mi" class="flex justify-center items-center">
 			<div class="contenedor contenedor-sobre-mi flex items-center">
 				<div class="foto-sobre-mi">
-				  	<img loading="lazy" src="./images/jmv.webp" alt="Foto de Joel Valente" />
+				  	<img loading="lazy" src="./images/jmv_280.webp" alt="Foto de Joel Valente" class="shadow" width="280" height="280" />
 				</div>
 				<div class="info-sobre-mi">
 				  	<h2>Sobre mí</h2>
@@ -91,21 +76,21 @@
 			</div>
 		  	<div class="grid grid-columns">
 		   	<!-- ZCode -->
-		   	<div class="card rounded observer">
+		   	<div class="card rounded shadow observer">
 		   		<h3 class="card-title">ZCode</h3>
 		   		<p class="card-description">Un CMS modular con <strong>PHP, MySQLi y Smarty</strong>. Incluye sistema de licencias y migraciones. Ideal para proyectos escalables.</p>
 		   		<span class="badge">PHP</span>
 		   		<span class="badge">MySQLi</span>
 		   		<span class="badge">Smarty</span>
 		   	</div>
-		    	<div class="card rounded observer">
+		    	<div class="card rounded shadow observer">
 		   		<h3 class="card-title">FiestaDulce</h3>
 		   		<p class="card-description">Sitio creado con <strong>Astro y Tailwind</strong>, conectado a Google Sheets sin backend. Visual, ágil y editable por no técnicos.</p>
 		   		<span class="badge">Astro</span>
 		   		<span class="badge">Tailwind</span>
 		   		<span class="badge">Google Sheets</span>
 		    	</div>
-		   	<div class="card rounded observer">
+		   	<div class="card rounded shadow observer">
 		   		<h3 class="card-title">Discord Message</h3>
 		   		<p class="card-description">Herramienta online para generar mensajes estilo Discord. Ultra liviana y hecha con <strong>Astro</strong>.</p>
 		   		<span class="badge">Astro</span>
@@ -181,27 +166,27 @@
 				<h2>Habilidades</h2>
 			</div>
 		  	<div class="grid grid-columns">
-		   	<div class="card rounded observer">
+		   	<div class="card rounded shadow observer">
 		   		<svg-icon class="pe-none block" name="./images/icons/tech/php.svg"></svg-icon>
 		   		<h3 class="card-title">PHP</h3>
 		   		<p class="card-description">Desarrollo de aplicaciones web dinámicas con PHP, enfocándome en la eficiencia, seguridad y escalabilidad.</p>
 		   	</div>
-		   	<div class="card rounded observer">
+		   	<div class="card rounded shadow observer">
 		   		<svg-icon class="pe-none block" name="./images/icons/tech/mysql.svg"></svg-icon>
 		   		<h3 class="card-title">MySQL</h3>
 		   		<p class="card-description">Administración y optimización de bases de datos MySQL, garantizando consultas rápidas y estructuras bien diseñadas.</p>
 		   	</div>
-		   	<div class="card rounded observer">
+		   	<div class="card rounded shadow observer">
 		   		<svg-icon class="pe-none block" name="./images/icons/tech/smarty.svg"></svg-icon>
 		   		<h3 class="card-title">Smarty</h3>
 		   		<p class="card-description">Uso del motor de plantillas Smarty para crear interfaces limpias y eficientes, separando la lógica de la presentación.</p>
 		   	</div>
-		   	<div class="card rounded observer">
+		   	<div class="card rounded shadow observer">
 		   		<svg-icon class="pe-none block" name="./images/icons/tech/astro.svg"></svg-icon>
 		   		<h3 class="card-title">Astro</h3>
 		   		<p class="card-description">Desarrollo de sitios web rápidos y optimizados con Astro, una herramienta moderna para crear sitios estáticos.</p>
 		   	</div>
-		   	<div class="card rounded observer">
+		   	<div class="card rounded shadow observer">
 		   		<svg-icon class="pe-none block" name="./images/icons/tech/tailwind.svg"></svg-icon>
 		   		<h3 class="card-title">Tailwind CSS</h3>
 		   		<p class="card-description">Diseño de interfaces web utilizando Tailwind CSS, con un enfoque en la personalización y facilidad de uso.</p>
@@ -266,6 +251,9 @@
 	</main>
 
 	<div id="preloader"></div>
+	<div class="toggleMode fixed block aspect-ratio-1x1 size-32">
+		<div data-change-mode class="toggle"></div>
+	</div>
   	<div class="back-to-top fixed">
   		<svg-icon class="pe-none size-32" name="./images/icons/up.svg"></svg-icon>
   	</div>
