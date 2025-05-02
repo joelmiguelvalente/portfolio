@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="../images/jmv_64.webp" type="image/webp" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="title" content="Portfolio — Joel Miguel Valente"/>
+<meta name="description" content="Es mi portfolio personal creado en el cual presentaré algunos proyectos realizados"/>
+<meta name="images" content="../images/jmv_256.webp"/>
+<meta name="theme-color" content="#333333"/>
+<meta name="language" content="Spanish"/>
+<meta name="revisit-after" content="10 days"/>
+<meta name="author" content="Miguel92"/>
+<title>Porfolio — JMV</title>
+<link href="../css/style.css" rel="stylesheet">
+<script src="../js/app.js" defer></script>
+</head>
+<body>
+	<main>
+		<nav class="rounded fixed flex content-start items-center column-gap-8">
+			<a href="#inicio" class="menu-link height-32 flex content-center items-center column-gap-8 rounded active" data-link alt="Home section">
+				<svg-icon class="size-24 aspect-ratio-1x1" name="../images/icons/menu/home.svg"></svg-icon>
+				<span>Home</span>
+			</a>
+			<a href="#sobre-mi" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="About me section">
+				<svg-icon class="size-24 aspect-ratio-1x1" name="../images/icons/menu/about.svg"></svg-icon>
+				<span>About me</span>
+			</a>
+			<a href="#trabajos" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Work section">
+				<svg-icon class="size-24 aspect-ratio-1x1" name="../images/icons/menu/work.svg"></svg-icon>
+				<span>Work</span>
+			</a>
+			<a href="#proyectos" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Projects sections">
+				<svg-icon class="size-24 aspect-ratio-1x1" name="../images/icons/menu/projects.svg"></svg-icon>
+				<span>Projects</span>
+			</a>
+			<a href="#habilidades" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Skills sections">
+				<svg-icon class="size-24 aspect-ratio-1x1" name="../images/icons/menu/code.svg"></svg-icon>
+				<span>Skills</span>
+			</a>
+			<a href="#contacto" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Contact sections">
+				<svg-icon class="size-24 aspect-ratio-1x1" name="../images/icons/menu/contact.svg"></svg-icon>
+				<span>Contact</span>
+			</a>
+			<a href="../" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" alt="Inglés">
+				<svg-icon class="size-24 aspect-ratio-1x1" name="../images/icons/lang.svg"></svg-icon>
+				<span>Spanish</span>
+			</a>
+		</nav>
+		<header id="inicio" class="flex content-center items-center"s>
+			<div class="box text-center">
+				<h1>I'm <strong>Joel M. Valente</strong>!</h1>
+				<div class="flex content-center items-center column-gap-8">
+					<strong id="hack" data-list="Programmer, Developer, PHP Enthusiast, Self-taught, Naturally Curious.">Programmer</strong>
+				</div>
+				<small>Back-End Developer, Front-End Developer / Web Designer.</small>
+			</div>
+		</header>
+		<!-- ======= Section: Sobre Mi ======= -->
+		<section id="sobre-mi" class="flex justify-center items-center">
+			<div class="contenedor contenedor-sobre-mi flex items-center">
+				<div class="foto-sobre-mi">
+					<img loading="lazy" src="../images/jmv_280.webp" alt="Photo of Joel Valente" class="shadow" width="280" height="280" />
+				</div>
+				<div class="info-sobre-mi">
+					<h2>About Me</h2>
+					<p>I am a web developer from Buenos Aires, Argentina, passionate about creating functional and engaging digital experiences. I enjoy every stage of the process: <strong>from experimenting with new ideas to fine-tuning the final details</strong>.</p> 
+					<p>My background is primarily self-taught: I learned by researching, reading documentation, and watching tutorials on the topics that excite me the most. In 2022, I participated in the <strong>Oracle Next Education (ONE)</strong> program alongside <strong>Alura Latam</strong>, which helped strengthen my technical foundation. Currently, I am taking an <strong>advanced UI Design course</strong> at <u>Talento Tech (CABA)</u> to enhance my focus on design and user experience.</p> 
+					<p>I consider myself a curious, self-taught individual with a strong desire to keep growing. I don’t settle for the basics: <strong><em>I am always looking for new tools, technologies, and challenges that allow me to improve every day</em></strong>.</p>
+					<button class="button">¡Contact Me!</button>
+				</div>
+			</div>
+		</section>
+		<!-- ======= Section: Trabajos ======= -->
+		<section class="section trabajos"  id="trabajos">
+			<div class="head_section">
+				<h2>Work</h2>
+			</div>
+			<div class="grid grid-columns">
+				<!-- ZCode -->
+				<div class="card rounded shadow observer">
+					<h3 class="card-title">ZCode</h3>
+					<p class="card-description">A modular CMS with <strong>PHP, MySQLi, and Smarty</strong>. It includes a licensing system and migrations. Ideal for scalable projects.</p>
+					<span class="badge">PHP</span>
+					<span class="badge">MySQLi</span>
+					<span class="badge">Smarty</span>
+					<div class="acceder absolute">
+						<a class="block size-32 aspect-ratio-1x1" href="https://zcodev.alwaysdata.net/" rel="external" target="_blank" title="ZCode"><svg-icon name="../images/icons/link.svg"></svg-icon><span class="sr-only">ZCode</span></a>
+					</div>
+				</div>
+				<div class="card rounded shadow observer">
+					<h3 class="card-title">FiestaDulce</h3>
+					<p class="card-description">Site created with <strong>Astro and Tailwind</strong>, connected to Google Sheets without a backend. Visual, fast, and editable by non-technical users.</p>
+					<span class="badge">Astro</span>
+					<span class="badge">Tailwind</span>
+					<span class="badge">Google Sheets</span>
+					<div class="acceder absolute">
+						<a class="block size-32 aspect-ratio-1x1" href="https://fiestadulce.vercel.app/" rel="external" target="_blank" title="FiestaDulce"><svg-icon name="../images/icons/link.svg"></svg-icon><span class="sr-only">FiestaDulce</span></a>
+					</div>
+				</div>
+				<div class="card rounded shadow observer">
+					<h3 class="card-title">Discord Message</h3>
+					<p class="card-description">Online tool to generate Discord-style messages. Ultra lightweight and built with <strong>Astro</strong>.</p>
+					<span class="badge">Astro</span>
+					<div class="acceder absolute">
+						<a class="block size-32 aspect-ratio-1x1" href="https://discord-message-omega.vercel.app/" rel="external" target="_blank" title="Discord Message"><svg-icon name="../images/icons/link.svg"></svg-icon><span class="sr-only">Discord Message</span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ======= Section: Proyectos ======= -->
+		<section class="section proyectos" id="proyectos">
+			<div class="head_section">
+				<h2>Projects</h2>
+			</div>
+			<div class="galeria_container">
+				<div class="galeria_item flex observer" onclick="window.open('https://proyectos-random-x.github.io/barberia/', '_blank')">
+					<picture class="block">
+						<source data-srcset="../images/proyectos/320/barberia.webp 1x" media="(max-width: 320px)">
+						<source data-srcset="../images/proyectos/600/barberia.webp 1x" media="(max-width: 600px)">
+						<img loading="lazy" class="gallery_img image size-full rounded" alt="Barbería project Alura optional" title="Barbería Alura" src="../images/proyectos/320/barberia.webp" data-src="../images/proyectos/barberia.webp">
+					</picture>
+					<div class="galeria_info">
+						<h3>Barbería Alura</h3>
+						<p>What was done in modules (1, 2, 3, and 4) of HTML/CSS at Alura Latam... Obviously modified!</p>
+					</div>
+				</div>
+				<div class="galeria_item flex observer">
+					<picture class="block">
+						<source data-srcset="../images/proyectos/320/encriptadorv1.webp 1x" media="(max-width: 320px)">
+						<source data-srcset="../images/proyectos/600/encriptadorv1.webp 1x" media="(max-width: 600px)">
+						<img loading="lazy" class="gallery_img image size-full rounded" alt="Challenge project encryptor" title="	Encryptor - Challenge" src="../images/proyectos/320/encriptadorv1.webp" data-src="../images/proyectos/encriptadorv1.webp">
+					</picture>
+					<div class="galeria_info">
+						<h3>Encryptor - Challenge</h3>
+						<p>Completed challenge: Text encryptor, in Oracle Next Education + Alura</p>
+					</div>
+				</div>
+				<div class="galeria_item flex observer" onclick="window.open('https://exquisite-moonbeam-680e7e.netlify.app/', '_blank')">
+					<picture class="block">
+						<source data-srcset="../images/proyectos/320/encriptadorv2.webp 1x" media="(max-width: 320px)">
+						<source data-srcset="../images/proyectos/600/encriptadorv2.webp 1x" media="(max-width: 600px)">
+						<img loading="lazy" class="gallery_img image size-full rounded" alt="Challenge project encryptor" title="Encryptor v2 - An altered version" src="../images/proyectos/320/encriptadorv2.webp" data-src="../images/proyectos/encriptadorv2.webp">
+					</picture>
+					<div class="galeria_info">
+						<h3>Encryptor v2 - An altered version</h3>
+						<p>This is the second version of the challenge encryptor</p>
+					</div>
+				</div>
+				<div class="galeria_item flex observer" onclick="window.open('https://proyectos-random-x.github.io/encriptadores/', '_blank')">
+					<picture class="block">
+						<source data-srcset="../images/proyectos/320/encriptadorv3.webp 1x" media="(max-width: 320px)">
+						<source data-srcset="../images/proyectos/600/encriptadorv3.webp 1x" media="(max-width: 600px)">
+						<img loading="lazy" class="gallery_img image size-full rounded" alt="Challenge project encryptor" title="Encryptor v3 - An altered version" src="../images/proyectos/320/encriptadorv3.webp" data-src="../images/proyectos/encriptadorv3.webp">
+					</picture>
+					<div class="galeria_info">
+						<h3>Encryptor v3 - An altered version</h3>
+						<p>This is an alternate and more advanced version of the Encryptor</p>
+					</div>
+				</div>
+				<div class="galeria_item flex observer" onclick="window.open('https://proyectos-random-x.github.io/ahorcado/', '_blank')">
+					<picture class="block">
+						<source data-srcset="../images/proyectos/320/ahorcadov1.1.webp 1x" media="(max-width: 320px)">
+						<source data-srcset="../images/proyectos/600/ahorcadov1.1.webp 1x" media="(max-width: 600px)">
+						<img loading="lazy" class="gallery_img image size-full rounded" alt="Challenge project hangman" title="Hangman v1.1 - An altered version" src="../images/proyectos/320/ahorcadov1.1.webp" data-src="../images/proyectos/ahorcadov1.1.webp">
+					</picture>
+					<div class="galeria_info">
+						<h3>Hangman v1.1 - An altered version</h3>
+						<p>This is an alternate and more advanced version of Hangman</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ======= Section: Habilidades ======= -->
+		<section class="section habilidades" id="habilidades">
+			<div class="head_section">
+				<h2>Skills</h2>
+			</div>
+			<div class="grid grid-columns">
+				<div class="card rounded shadow observer">
+					<svg-icon class="pe-none block" name="../images/icons/tech/php.svg"></svg-icon>
+					<h3 class="card-title">PHP</h3>
+					<p class="card-description">Development of dynamic web applications with PHP, focusing on efficiency, security, and scalability.</p>
+				</div>
+				<div class="card rounded shadow observer">
+					<svg-icon class="pe-none block" name="../images/icons/tech/mysql.svg"></svg-icon>
+					<h3 class="card-title">MySQL</h3>
+					<p class="card-description">Management and optimization of MySQL databases, ensuring fast queries and well-designed structures.</p>
+				</div>
+				<div class="card rounded shadow observer">
+					<svg-icon class="pe-none block" name="../images/icons/tech/smarty.svg"></svg-icon>
+					<h3 class="card-title">Smarty</h3>
+					<p class="card-description">Using the Smarty templating engine to create clean and efficient interfaces, separating logic from presentation.</p>
+				</div>
+				<div class="card rounded shadow observer">
+					<svg-icon class="pe-none block" name="../images/icons/tech/astro.svg"></svg-icon>
+					<h3 class="card-title">Astro</h3>
+					<p class="card-description">Developing fast and optimized websites with Astro, a modern tool for creating static sites.</p>
+				</div>
+				<div class="card rounded shadow observer">
+					<svg-icon class="pe-none block" name="../images/icons/tech/tailwind.svg"></svg-icon>
+					<h3 class="card-title">Tailwind CSS</h3>
+					<p class="card-description">Designing web interfaces using Tailwind CSS, focusing on customization and ease of use.</p>
+				</div>
+			</div>
+
+		</section>
+		<!-- ======= Section: Contacto ======= -->
+		<section class="section contacto" id="contacto">
+			<div class="head_section">
+				<h2>Contact</h2>
+			</div>
+
+			<form action="#" method="POST" id="contact-form">
+				<div class="form-group">
+					<label for="name" class="form-label">Name</label>
+					<input type="text" id="name" name="name" class="form-input rounded" placeholder="Your name" required>
+				</div>
+				<div class="form-group">
+					<label for="email" class="form-label">Email</label>
+					<input type="email" id="email" name="email" class="form-input rounded" placeholder="Your email" required>
+				</div>
+				<div class="form-group">
+				 	<label for="message" class="form-label">Message</label>
+				 	<textarea id="message" name="message" class="form-input rounded" placeholder="Your message" rows="5" required></textarea>
+				</div>
+				<button type="submit" class="button submit-btn">Send</button>
+				<div id="status-message"></div>
+			</form>
+		</section>
+
+	
+		<!-- ======= Footer ======= -->
+		<footer class="flex content-center items-center column-gap-8 py-32 flex-col text-center">
+
+			<h3 class="footer-title">Joel Miguel Valente</h3>
+			<div class="footer_socials flex content-center items-center column-gap-8">
+				<a href="https://www.linkedin.com/in/joelmiguelvalente" class="social linkedin size-32 block aspect-ratio-1x1 text-center rounded" rel="external" aria-label="Linkedin">
+					<span class="sr-only">Linkedin</span>
+					<svg-icon class="pe-none" name="../images/icons/brand/linkedin.svg"></svg-icon>
+				</a>
+				<a href="https://x.com/JValenteM92" class="social twitter size-32 block aspect-ratio-1x1 text-center rounded" rel="external" aria-label="X - Twitter">
+					<span class="sr-only">X - Twitter</span>
+					<svg-icon class="pe-none" name="../images/icons/brand/x.svg"></svg-icon>
+				</a>
+				<a href="https://discord.com/users/465203938900049920" class="social discord size-32 block aspect-ratio-1x1 text-center rounded" rel="external" aria-label="Discord">
+					<span class="sr-only">Discord</span>
+					<svg-icon class="pe-none" name="../images/icons/brand/discord.svg"></svg-icon>
+				</a>
+				<a href="https://github.com/joelmiguelvalente" class="social github size-32 block aspect-ratio-1x1 text-center rounded" rel="external" aria-label="Github">
+					<span class="sr-only">Github</span>
+					<svg-icon class="pe-none" name="../images/icons/brand/github.svg"></svg-icon>
+				</a>
+			</div>
+
+			<p>PortFolio © Copyright 2022 - 2025.</p>
+			<small>Diseñado por Miguel92</small>
+			
+		</footer>
+	</main>
+
+	<div id="preloader"></div>
+	<div class="toggleMode fixed block aspect-ratio-1x1 size-32">
+		<div data-change-mode class="toggle"></div>
+	</div>
+	<div class="back-to-top fixed">
+		<svg-icon class="pe-none size-32" name="../images/icons/up.svg"></svg-icon>
+	</div>
+</body>
+</html>

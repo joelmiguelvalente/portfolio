@@ -187,7 +187,7 @@
 				method: "POST",
 				headers: { 'X-API-Key': API_KEY },
 				body: formData,
-				 mode: "cors",
+				mode: "no-cors",
 			});
 
 			if (!response.ok) {

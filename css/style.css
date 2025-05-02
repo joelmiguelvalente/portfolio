@@ -178,9 +178,6 @@ header {
 	 * https://unsplash.com/es/@blakeconnally?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash
 	*/
 	background: linear-gradient(to top, rgba(var(--body-bg), .6), rgba(var(--body-bg), .9)), url('../images/blake-connally.webp') no-repeat center / cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	.box {
 		h1 {
 			strong {
@@ -321,7 +318,8 @@ footer {
 	width: 90%;
 	margin: 0 auto;
 	padding: 2rem 0;
-	.head_section {
+	min-height: 100dvh;
+	& .head_section {
 		text-align: center;
 		padding-bottom: 2rem;
 	}
@@ -335,17 +333,17 @@ footer {
 #sobre-mi {
 	min-height: 100dvh;
 	padding: 3rem 2rem;
-	.contenedor-sobre-mi {
+	& .contenedor-sobre-mi {
 		flex-direction: row;
 		gap: 2rem;
 	}
-	.foto-sobre-mi img {
+	& .foto-sobre-mi img {
 		width: 280px;
 		height: 280px;
 		border-radius: 50%;
 		object-fit: cover;
 	}
-	.info-sobre-mi {
+	& .info-sobre-mi {
 		max-width: 800px;
 		line-height: 1.6;
 	}
@@ -448,6 +446,7 @@ footer {
 	padding: 1rem;
 	transition: box-shadow 0.3s ease;
 	color: rgb(var(--body-color));
+	position: relative;
 	svg-icon {
 		margin: 0 auto;
 		width: 4rem!important;
@@ -457,12 +456,16 @@ footer {
 	.card-title {
 		font-size: 1.25rem;
 		font-weight: 600;
-		margin-bottom: 0.5rem;
+		margin-bottom: 1rem;
 	}
 	.card-description {
 		font-size: 1rem;
 		margin-bottom: 0.75rem;
 	}
+}
+.acceder {
+	top: 1rem;
+	right: 1rem;
 }
 /* Badge */
 .badge {
