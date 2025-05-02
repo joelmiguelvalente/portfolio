@@ -184,10 +184,10 @@
 
 		try {
 			const response = await fetch('https://zcodev.alwaysdata.net/feed/api/sendmail.php', {
-				method: 'POST',
+				method: "POST",
 				headers: { 'X-API-Key': API_KEY },
 				body: formData,
-				mode: 'no-cors'
+				 mode: "cors",
 			});
 
 			if (!response.ok) {
