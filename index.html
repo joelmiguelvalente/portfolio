@@ -18,157 +18,166 @@
 </head>
 <body>
 	<main>
-		<nav class="rounded fixed flex content-start items-center column-gap-8">
-			<a href="#inicio" class="menu-link height-32 flex content-center items-center column-gap-8 rounded active" data-link alt="Seccion de Inicio">
+		<nav class="container navbar flex content-center items-center column-gap-32 width-full">
+			<a href="#inicio" class="menu-link flex content-center items-center column-gap-8 rounded active" data-link alt="Seccion de Inicio">
 				<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/home.svg"></svg-icon>
 				<span>Inicio</span>
 			</a>
-			<a href="#sobre-mi" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Sobre mi">
+			<a href="#sobre-mi" class="menu-link flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Sobre mi">
 				<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/about.svg"></svg-icon>
 				<span>Sobre mi</span>
 			</a>
-			<a href="#trabajos" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Trabajos">
+			<a href="#trabajos" class="menu-link flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Trabajos">
 				<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/work.svg"></svg-icon>
 				<span>Trabajos</span>
 			</a>
-			<a href="#proyectos" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Proyectos">
+			<a href="#proyectos" class="menu-link flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Proyectos">
 				<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/projects.svg"></svg-icon>
 				<span>Proyectos</span>
 			</a>
-			<a href="#habilidades" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Habilidades">
+			<a href="#habilidades" class="menu-link flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Habilidades">
 				<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/code.svg"></svg-icon>
 				<span>Habilidades</span>
 			</a>
-			<a href="#contacto" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Contacto">
+			<a href="#contacto" class="menu-link flex content-center items-center column-gap-8 rounded" data-link alt="Seccion de Contacto">
 				<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/menu/contact.svg"></svg-icon>
 				<span>Contacto</span>
 			</a>
-			<a href="./en/index.html" class="menu-link height-32 flex content-center items-center column-gap-8 rounded" alt="Inglés">
-				<svg-icon class="size-24 aspect-ratio-1x1" name="./images/icons/lang.svg"></svg-icon>
-				<span>Inglés</span>
-			</a>
 		</nav>
-		<header id="inicio" class="flex content-center items-center"s>
+		<header id="inicio" class="container bg:600 bg-opacity-2 rounded shadow flex content-center items-center">
 			<div class="box text-center">
 				<h1>Soy <strong>Joel M. Valente</strong>!</h1>
-				<div class="flex content-center items-center column-gap-8">
+				<div class="categories flex content-center items-center column-gap-8">
 					<strong id="hack" data-list="Programador,Desarrollador,Entusiasta en PHP,Autodidacta,Curioso por naturaleza">Programador</strong>
 				</div>
 				<small>Desarrollador Back-End, Front-End / Diseñador web</small>
 			</div>
 		</header>
 		<!-- ======= Section: Sobre Mi ======= -->
-		<section id="sobre-mi" class="flex justify-center items-center">
-			<div class="contenedor contenedor-sobre-mi flex items-center">
+		<section id="sobre-mi" class="container flex justify-center items-center">
+			<div class="contenedor contenedor-sobre-mi flex content-start items-center column-gap-24">
 				<div class="foto-sobre-mi">
-				  	<img loading="lazy" src="./images/jmv_280.webp" alt="Foto de Joel Valente" class="shadow" width="280" height="280" />
+					<img loading="lazy" src="./images/jmv_280.webp" alt="Foto de Joel Valente" class="shadow rounded" width="280" height="280" />
 				</div>
 				<div class="info-sobre-mi">
-				  	<h2>Sobre mí</h2>
-				  	<p>Soy un desarrollador web de Buenos Aires, Argentina, apasionado por la creación de experiencias digitales funcionales y atractivas. Disfruto cada etapa del proceso: <strong>desde experimentar con nuevas ideas hasta pulir los últimos detalles</strong>.</p>
-				  	<p>Mi formación es principalmente autodidacta: aprendí investigando, leyendo documentación y viendo tutoriales sobre los temas que más me entusiasman. En 2022 formé parte del programa <strong>Oracle Next Education (ONE)</strong> junto a <strong>Alura Latam</strong>, lo que me ayudó a fortalecer mis bases técnicas. Actualmente, estoy realizando un <strong>curso avanzado de Diseño UI</strong> en <u>Talento Tech (CABA)</u> para potenciar mi enfoque en diseño y experiencia de usuario.</p>
-				  	<p>Me considero una persona curiosa, autodidacta y con muchas ganas de seguir creciendo. No me conformo con lo básico: <strong><em>siempre estoy buscando nuevas herramientas, tecnologías y desafíos que me permitan superarme día a día</em></strong>.</p>
-				  	<button class="button">¡Contáctame!</button>
+					<div class="head_section">
+						<h2>Sobre mí</h2>
+					</div>
+					<p>Soy desarrollador web en Buenos Aires, apasionado por crear experiencias digitales funcionales y atractivas. Disfruto cada etapa del proceso, desde la idea inicial hasta el último detalle.</p>
+					<p>Me formé de manera autodidacta, complementando mi aprendizaje con el programa <strong>Oracle Next Education (ONE)</strong> y actualmente <strong>curso avanzado de Diseño UI</strong> en <u>Talento Tech (CABA)</u> para profundizar en experiencia de usuario.</p>
+					<p>Me defino como una persona curiosa, con ganas de seguir creciendo, siempre en busca de nuevos desafíos y herramientas para mejorar.</p>
+					<button class="button">¡Contáctame!</button>
 				</div>
 			</div>
 		</section>
 		<!-- ======= Section: Trabajos ======= -->
-		<section class="section trabajos"  id="trabajos">
+		<section id="trabajos" class="container section trabajos">
 			<div class="head_section">
 				<h2>Trabajos</h2>
 			</div>
-		  	<div class="grid grid-columns">
-		   	<!-- ZCode -->
-		   	<div class="card rounded shadow observer">
-		   		<h3 class="card-title">ZCode</h3>
-		   		<p class="card-description">Un CMS modular con <strong>PHP, MySQLi y Smarty</strong>. Incluye sistema de licencias y migraciones. Ideal para proyectos escalables.</p>
-		   		<span class="badge">PHP</span>
-		   		<span class="badge">MySQLi</span>
-		   		<span class="badge">Smarty</span>
-		   		<div class="acceder absolute">
-		   			<a class="block size-32 aspect-ratio-1x1" href="https://zcodev.alwaysdata.net/" rel="external" target="_blank" title="ZCode"><svg-icon name="./images/icons/link.svg"></svg-icon><span class="sr-only">ZCode</span></a>
-		   		</div>
-		   	</div>
-		    	<div class="card rounded shadow observer">
-		   		<h3 class="card-title">FiestaDulce</h3>
-		   		<p class="card-description">Sitio creado con <strong>Astro y Tailwind</strong>, conectado a Google Sheets sin backend. Visual, ágil y editable por no técnicos.</p>
-		   		<span class="badge">Astro</span>
-		   		<span class="badge">Tailwind</span>
-		   		<span class="badge">Google Sheets</span>
-		   		<div class="acceder absolute">
-		   			<a class="block size-32 aspect-ratio-1x1" href="https://fiestadulce.vercel.app/" rel="external" target="_blank" title="FiestaDulce"><svg-icon name="./images/icons/link.svg"></svg-icon><span class="sr-only">FiestaDulce</span></a>
-		   		</div>
-		    	</div>
-		   	<div class="card rounded shadow observer">
-		   		<h3 class="card-title">Discord Message</h3>
-		   		<p class="card-description">Herramienta online para generar mensajes estilo Discord. Ultra liviana y hecha con <strong>Astro</strong>.</p>
-		   		<span class="badge">Astro</span>
-		   		<div class="acceder absolute">
-		   			<a class="block size-32 aspect-ratio-1x1" href="https://discord-message-omega.vercel.app/" rel="external" target="_blank" title="Discord Message"><svg-icon name="./images/icons/link.svg"></svg-icon><span class="sr-only">Discord Message</span></a>
-		   		</div>
-		   	</div>
-		   </div>
+			<div class="grid grid-columns gap-16">
+				<!-- ZCode -->
+				<div class="card rounded shadow observer relative">
+					<h3 class="card-title">ZCode</h3>
+					<p class="card-description">Un CMS modular con <strong>PHP, MySQLi y Smarty</strong>. Incluye sistema de licencias y migraciones. Ideal para proyectos escalables.</p>
+					<span class="badge">PHP</span>
+					<span class="badge">MySQLi</span>
+					<span class="badge">Smarty</span>
+					<div class="acceder absolute">
+						<a class="block size-32 aspect-ratio-1x1" href="https://zcodev.alwaysdata.net/" rel="external" target="_blank" title="ZCode"><svg-icon name="./images/icons/link.svg"></svg-icon><span class="sr-only">ZCode</span></a>
+					</div>
+				</div>
+				<div class="card rounded shadow observer relative">
+					<h3 class="card-title">FiestaDulce</h3>
+					<p class="card-description">Sitio creado con <strong>Astro y Tailwind</strong>, conectado a Google Sheets sin backend. Visual, ágil y editable por no técnicos.</p>
+					<span class="badge">Astro</span>
+					<span class="badge">Tailwind</span>
+					<span class="badge">Google Sheets</span>
+					<div class="acceder absolute">
+						<a class="block size-32 aspect-ratio-1x1" href="https://fiestadulce.vercel.app/" rel="external" target="_blank" title="FiestaDulce"><svg-icon name="./images/icons/link.svg"></svg-icon><span class="sr-only">FiestaDulce</span></a>
+					</div>
+				</div>
+				<div class="card rounded shadow observer relative">
+					<h3 class="card-title">Discord Message</h3>
+					<p class="card-description">Herramienta online para generar mensajes estilo Discord. Ultra liviana y hecha con <strong>Astro</strong>.</p>
+					<span class="badge">Astro</span>
+					<div class="acceder absolute">
+						<a class="block size-32 aspect-ratio-1x1" href="https://discord-message-omega.vercel.app/" rel="external" target="_blank" title="Discord Message"><svg-icon name="./images/icons/link.svg"></svg-icon><span class="sr-only">Discord Message</span></a>
+					</div>
+				</div>
+			</div>
 		</section>
 		<!-- ======= Section: Proyectos ======= -->
 		<section class="section proyectos" id="proyectos">
 			<div class="head_section">
 				<h2>Proyectos</h2>
 			</div>
-			<div class="galeria_container">
-				<div class="galeria_item flex observer" onclick="window.open('https://proyectos-random-x.github.io/barberia/', '_blank')">
+			<div class="galeria_container flex gap-24 flex-wrap">
+				<div class="galeria_item rounded shadow flex flex-column observer" onclick="window.open('https://proyectos-random-x.github.io/OnePageCV/', '_blank')">
 					<picture class="block">
-					 	<source data-srcset="./images/proyectos/320/barberia.webp 1x" media="(max-width: 320px)">
-					 	<source data-srcset="./images/proyectos/600/barberia.webp 1x" media="(max-width: 600px)">
-					 	<img loading="lazy" class="galeria_img image size-full rounded" alt="proyecto barberia alura opcional" title="Barbería alura" src="./images/proyectos/320/barberia.webp" data-src="./images/proyectos/barberia.webp">
+						<source data-srcset="./images/proyectos/320/onepagecv.webp 1x" media="(max-width: 320px)">
+						<source data-srcset="./images/proyectos/600/onepagecv.webp 1x" media="(max-width: 600px)">
+						<img loading="lazy" class="galeria_img image size-full rounded" alt="portfolio configurable" title="Portfolio para configurar" src="./images/proyectos/320/onepagecv.webp" data-src="./images/proyectos/onepagecv.webp">
 					</picture>
-				  	<div class="galeria_info">
-				  		<h3>Barbería alura</h3>
-				  		<p>Lo realizado en los modulos (1,2,3 y 4) de HTML/CSS en Alura Latam... Obviamente modificado!</p>
-				  	</div>
+					<div class="galeria_info">
+						<h3 class="card-title">Portfolio para configurar</h3>
+						<p class="card-description">Un portfolio personal minimalista y profesional que funciona como CV online de una sola página.</p>
+					</div>
 				</div>
-				<div class="galeria_item flex observer">
+				<div class="galeria_item rounded shadow flex flex-column observer" onclick="window.open('https://proyectos-random-x.github.io/barberia/', '_blank')">
 					<picture class="block">
-					 	<source data-srcset="./images/proyectos/320/encriptadorv1.webp 1x" media="(max-width: 320px)">
-					 	<source data-srcset="./images/proyectos/600/encriptadorv1.webp 1x" media="(max-width: 600px)">
-					 	<img loading="lazy" class="galeria_img image size-full rounded" alt="proyecto challenge encriptador" title="Encriptador - Challenge" src="./images/proyectos/320/encriptadorv1.webp" data-src="./images/proyectos/encriptadorv1.webp">
+						<source data-srcset="./images/proyectos/320/barberia.webp 1x" media="(max-width: 320px)">
+						<source data-srcset="./images/proyectos/600/barberia.webp 1x" media="(max-width: 600px)">
+						<img loading="lazy" class="galeria_img image size-full rounded" alt="proyecto barberia alura opcional" title="Barbería alura" src="./images/proyectos/320/barberia.webp" data-src="./images/proyectos/barberia.webp">
+					</picture>
+					<div class="galeria_info">
+						<h3 class="card-title">Barbería alura</h3>
+						<p class="card-description">Lo realizado en los modulos (1,2,3 y 4) de HTML/CSS en Alura Latam... Obviamente modificado!</p>
+					</div>
+				</div>
+				<div class="galeria_item rounded shadow flex flex-column observer">
+					<picture class="block">
+						<source data-srcset="./images/proyectos/320/encriptadorv1.webp 1x" media="(max-width: 320px)">
+						<source data-srcset="./images/proyectos/600/encriptadorv1.webp 1x" media="(max-width: 600px)">
+						<img loading="lazy" class="galeria_img image size-full rounded" alt="proyecto challenge encriptador" title="Encriptador - Challenge" src="./images/proyectos/320/encriptadorv1.webp" data-src="./images/proyectos/encriptadorv1.webp">
 					</picture>			      	
-				  	<div class="galeria_info">
-				  		<h3>Encriptador - Challenge</h3>
-				  		<p>Challenge completado: Encriptador de texto, en Oracle Next Education + Alura</p>
-				  	</div>
+					<div class="galeria_info">
+						<h3 class="card-title">Encriptador - Challenge</h3>
+						<p class="card-description">Challenge completado: Encriptador de texto, en Oracle Next Education + Alura</p>
+					</div>
 				</div>
-				<div class="galeria_item flex observer" onclick="window.open('https://exquisite-moonbeam-680e7e.netlify.app/', '_blank')">
+				<div class="galeria_item rounded shadow flex flex-column observer" onclick="window.open('https://exquisite-moonbeam-680e7e.netlify.app/', '_blank')">
 					<picture class="block">
-					 	<source data-srcset="./images/proyectos/320/encriptadorv2.webp 1x" media="(max-width: 320px)">
-					 	<source data-srcset="./images/proyectos/600/encriptadorv2.webp 1x" media="(max-width: 600px)">
-					 	<img loading="lazy" class="galeria_img image size-full rounded" alt="proyecto challenge encriptador" title="Encriptador v2 - Un versión altera" src="./images/proyectos/320/encriptadorv2.webp" data-src="./images/proyectos/encriptadorv2.webp">
+						<source data-srcset="./images/proyectos/320/encriptadorv2.webp 1x" media="(max-width: 320px)">
+						<source data-srcset="./images/proyectos/600/encriptadorv2.webp 1x" media="(max-width: 600px)">
+						<img loading="lazy" class="galeria_img image size-full rounded" alt="proyecto challenge encriptador" title="Encriptador v2 - Un versión altera" src="./images/proyectos/320/encriptadorv2.webp" data-src="./images/proyectos/encriptadorv2.webp">
 					</picture>
-				  	<div class="galeria_info">
-				  		<h3>Encriptador v2 - Un versión altera</h3>
-				  		<p>Esta es la segunda versión del challege-encriptador</p>
-				  	</div>
+					<div class="galeria_info">
+						<h3 class="card-title">Encriptador v2 - Un versión altera</h3>
+						<p class="card-description">Esta es la segunda versión del challege-encriptador</p>
+					</div>
 				</div>
-				<div class="galeria_item flex observer" onclick="window.open('https://proyectos-random-x.github.io/encriptadores/', '_blank')">
+				<div class="galeria_item rounded shadow flex flex-column observer" onclick="window.open('https://proyectos-random-x.github.io/encriptadores/', '_blank')">
 					<picture class="block">
-					 	<source data-srcset="./images/proyectos/320/encriptadorv3.webp 1x" media="(max-width: 320px)">
-					 	<source data-srcset="./images/proyectos/600/encriptadorv3.webp 1x" media="(max-width: 600px)">
-					 	<img loading="lazy" class="galeria_img image size-full rounded" alt="proyecto challenge encriptador" title="Encriptador v3 - Un versión altera" src="./images/proyectos/320/encriptadorv3.webp" data-src="./images/proyectos/encriptadorv3.webp">
+						<source data-srcset="./images/proyectos/320/encriptadorv3.webp 1x" media="(max-width: 320px)">
+						<source data-srcset="./images/proyectos/600/encriptadorv3.webp 1x" media="(max-width: 600px)">
+						<img loading="lazy" class="galeria_img image size-full rounded" alt="proyecto challenge encriptador" title="Encriptador v3 - Un versión altera" src="./images/proyectos/320/encriptadorv3.webp" data-src="./images/proyectos/encriptadorv3.webp">
 					</picture>
-				  	<div class="galeria_info">
-				  		<h3>Encriptador v3 - Un versión altera</h3>
-				  		<p>Esta es una versión alterna y más avanzada del Encriptador</p>
-				  	</div>
+					<div class="galeria_info">
+						<h3 class="card-title">Encriptador v3 - Un versión altera</h3>
+						<p class="card-description">Esta es una versión alterna y más avanzada del Encriptador</p>
+					</div>
 				</div>
-				<div class="galeria_item flex observer" onclick="window.open('https://proyectos-random-x.github.io/ahorcado/', '_blank')">
-				   <picture class="block">
-					 	<source data-srcset="./images/proyectos/600/ahorcadov1.1.webp 1x" media="(max-width: 320px)">
-					 	<source data-srcset="./images/proyectos/600/ahorcadov1.1.webp 1x" media="(max-width: 600px)">
-					 	<img loading="lazy" class="galeria_img image size-full rounded" alt="proyecto challenge ahorcado" title="Ahorcado v1.1 - Un versión altera" src="./images/proyectos/600/ahorcadov1.1.webp" data-src="./images/proyectos/ahorcadov1.1.webp">
+				<div class="galeria_item rounded shadow flex flex-column observer" onclick="window.open('https://proyectos-random-x.github.io/ahorcado/', '_blank')">
+					<picture class="block">
+						<source data-srcset="./images/proyectos/600/ahorcadov1.1.webp 1x" media="(max-width: 320px)">
+						<source data-srcset="./images/proyectos/600/ahorcadov1.1.webp 1x" media="(max-width: 600px)">
+						<img loading="lazy" class="galeria_img image size-full rounded" alt="proyecto challenge ahorcado" title="Ahorcado v1.1 - Un versión altera" src="./images/proyectos/600/ahorcadov1.1.webp" data-src="./images/proyectos/ahorcadov1.1.webp">
 					</picture>
-				  	<div class="galeria_info">
-				  		<h3>Ahorcado v1.1 - Un versión altera</h3>
-				  		<p>Esta es una versión alterna y más avanzada del Ahorcado</p>
-				  	</div>
+					<div class="galeria_info">
+						<h3 class="card-title">Ahorcado v1.1 - Un versión altera</h3>
+						<p class="card-description">Esta es una versión alterna y más avanzada del Ahorcado</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -177,61 +186,77 @@
 			<div class="head_section">
 				<h2>Habilidades</h2>
 			</div>
-		  	<div class="grid grid-columns">
-		   	<div class="card rounded shadow observer">
-		   		<svg-icon class="pe-none block" name="./images/icons/tech/php.svg"></svg-icon>
-		   		<h3 class="card-title">PHP</h3>
-		   		<p class="card-description">Desarrollo de aplicaciones web dinámicas con PHP, enfocándome en la eficiencia, seguridad y escalabilidad.</p>
-		   	</div>
-		   	<div class="card rounded shadow observer">
-		   		<svg-icon class="pe-none block" name="./images/icons/tech/mysql.svg"></svg-icon>
-		   		<h3 class="card-title">MySQL</h3>
-		   		<p class="card-description">Administración y optimización de bases de datos MySQL, garantizando consultas rápidas y estructuras bien diseñadas.</p>
-		   	</div>
-		   	<div class="card rounded shadow observer">
-		   		<svg-icon class="pe-none block" name="./images/icons/tech/smarty.svg"></svg-icon>
-		   		<h3 class="card-title">Smarty</h3>
-		   		<p class="card-description">Uso del motor de plantillas Smarty para crear interfaces limpias y eficientes, separando la lógica de la presentación.</p>
-		   	</div>
-		   	<div class="card rounded shadow observer">
-		   		<svg-icon class="pe-none block" name="./images/icons/tech/astro.svg"></svg-icon>
-		   		<h3 class="card-title">Astro</h3>
-		   		<p class="card-description">Desarrollo de sitios web rápidos y optimizados con Astro, una herramienta moderna para crear sitios estáticos.</p>
-		   	</div>
-		   	<div class="card rounded shadow observer">
-		   		<svg-icon class="pe-none block" name="./images/icons/tech/tailwind.svg"></svg-icon>
-		   		<h3 class="card-title">Tailwind CSS</h3>
-		   		<p class="card-description">Diseño de interfaces web utilizando Tailwind CSS, con un enfoque en la personalización y facilidad de uso.</p>
-		   	</div>
+			<div class="grid grid-columns gap-16">
+				<div class="card rounded shadow observer relative">
+					<div class="text-center">
+						<svg-icon class="pe-none block" name="./images/icons/tech/php.svg"></svg-icon>
+						<h3 class="card-title">PHP</h3>
+					</div>
+					<p class="card-description">Desarrollo de aplicaciones web dinámicas con PHP, enfocándome en la eficiencia, seguridad y escalabilidad.</p>
+				</div>
+				<div class="card rounded shadow observer relative">
+					<div class="text-center">
+						<svg-icon class="pe-none block" name="./images/icons/tech/mysql.svg"></svg-icon>
+						<h3 class="card-title">MySQL</h3>
+					</div>
+					<p class="card-description">Administración y optimización de bases de datos MySQL, garantizando consultas rápidas y estructuras bien diseñadas.</p>
+				</div>
+				<div class="card rounded shadow observer relative">
+					<div class="text-center">
+						<svg-icon class="pe-none block" name="./images/icons/tech/smarty.svg"></svg-icon>
+						<h3 class="card-title">Smarty</h3>
+					</div>
+					<p class="card-description">Uso del motor de plantillas Smarty para crear interfaces limpias y eficientes, separando la lógica de la presentación.</p>
+				</div>
+				<div class="card rounded shadow observer relative">
+					<div class="text-center">
+						<svg-icon class="pe-none block" name="./images/icons/tech/astro.svg"></svg-icon>
+						<h3 class="card-title">Astro</h3>
+					</div>
+					<p class="card-description">Desarrollo de sitios web rápidos y optimizados con Astro, una herramienta moderna para crear sitios estáticos.</p>
+				</div>
+				<div class="card rounded shadow observer relative">
+					<div class="text-center">
+						<svg-icon class="pe-none block" name="./images/icons/tech/tailwind.svg"></svg-icon>
+						<h3 class="card-title">Tailwind CSS</h3>
+					</div>
+					<p class="card-description">Diseño de interfaces web utilizando Tailwind CSS, con un enfoque en la personalización y facilidad de uso.</p>
+				</div>
 		  </div>
 		</section>
 		<!-- ======= Section: Contacto ======= -->
+		<!-- OCULTO HASTA NUEVO AVISO -->
 		<section class="section contacto" id="contacto">
 			<div class="head_section">
 				<h2>Contacto</h2>
+				<p>¿Querés hablar sobre un proyecto, mejorar tu web o simplemente decir hola?</p>
 			</div>
+			
+			<!-- Al tener https://formspree.io/f/mjkwnpyw recibiré los mensajes -->
+			<form action="https://formspree.io/f/mjkwnpyw" method="POST" id="form">
+				<div class="form-group">
+				  <label for="nombre">Nombre:</label>
+				  <input class="bg:900 color:50 bg-opacity-3 block backdrop-blur-10 rounded-md" type="text" id="nombre" name="nombre" placeholder="Jhon Doe">
+				</div>
 
-		  	<form action="#" method="POST" id="contact-form">
-		   	<div class="form-group">
-		   	 	<label for="name" class="form-label">Nombre</label>
-		   	  	<input type="text" id="name" name="name" class="form-input rounded" placeholder="Tu nombre" required>
-		   	</div>
-		   	<div class="form-group">
-		   	  	<label for="email" class="form-label">Correo electrónico</label>
-		   	  	<input type="email" id="email" name="email" class="form-input rounded" placeholder="Tu correo electrónico" required>
-		   	</div>
-		   	<div class="form-group">
-		   	  	<label for="message" class="form-label">Mensaje</label>
-		   	  	<textarea id="message" name="message" class="form-input rounded" placeholder="Tu mensaje" rows="5" required></textarea>
-		   	</div>
-		   	<button type="submit" class="button submit-btn">Enviar</button>
-		   	<div id="status-message"></div>
-		  	</form>
+				<div class="form-group">
+				  <label for="email">Correo:</label>
+				  <input class="bg:900 color:50 bg-opacity-3 block backdrop-blur-10 rounded-md" type="email" id="email" name="email" placeholder="jhondoe@example.com">
+				</div>
+
+				<div class="form-group">
+				  <label for="mensaje">Mensaje:</label>
+				  <textarea class="bg:900 color:50 bg-opacity-3 block backdrop-blur-10 rounded-md" id="mensaje" name="mensaje"></textarea>
+				</div>
+			  <p id="my-form-status"></p>
+
+			  <button type="submit" class="button">Enviar</button>
+			</form>
+			
 		</section>
 
-	
 		<!-- ======= Footer ======= -->
-		<footer class="flex content-center items-center column-gap-8 py-32 flex-col text-center">
+		<footer class="flex content-center items-center column-gap-8 py-32 flex-column text-center">
 
 			<h3 class="footer-title">Joel Miguel Valente</h3>
 			<div class="footer_socials flex content-center items-center column-gap-8">
@@ -259,12 +284,9 @@
 		</footer>
 	</main>
 
-	<div id="preloader"></div>
 	<div class="toggleMode fixed block aspect-ratio-1x1 size-32">
 		<div data-change-mode class="toggle"></div>
 	</div>
-  	<div class="back-to-top fixed">
-  		<svg-icon class="pe-none size-32" name="./images/icons/up.svg"></svg-icon>
-  	</div>
+
 </body>
 </html>

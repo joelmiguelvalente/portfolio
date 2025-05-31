@@ -50,8 +50,7 @@
 		const position = window.scrollY + 200;
 		const headerHeight = selectElement('header').offsetHeight;
 		const toggleClass = position - 200 >= headerHeight ? 'add' : 'remove';
-		nav.classList[toggleClass]('bg-full');
-		nav.classList[toggleClass]('shadow');
+		nav.classList[toggleClass]('bg\:950','bg-opacity-8','shadow','rounded-md','backdrop-blur-12','top-1');
 
 		selectElement('[data-link]', true).forEach(link => {
 			if (!link.hash) return;
@@ -162,54 +161,29 @@
 	document.querySelectorAll('.observer').forEach(el => lazyLoadObserver.observe(el));
 
 	// === FORMULARIO DE CONTACTO ===
-	const API_KEY = "OEFyV1pDa2NvTVZGNHFxWFUrcm9XZHM5SXoyVERmb0JETi9PMlgzWE1wYz0=";
-	const contactForm = selectElementById('contact-form');
-	const submitButton = selectElement('.submit-btn');
-
-	contactForm.addEventListener('submit', async function (event) {
-		event.preventDefault();
-		//
-		const form = event.target;
-		const name = form.name.value.trim();
-		const output = selectElementById('status-message');
-		const formData = new FormData();
-
-		formData.append('subject', `Nuevo mensaje de ${name}`);
-		formData.append('name', name);
-		formData.append('email', form.email.value.trim());
-		formData.append('message', form.message.value.trim());
-
-		submitButton.textContent = 'Enviando...';
-		submitButton.disabled = true; 
-
-		try {
-			const response = await fetch('https://zcodev.alwaysdata.net/feed/api/sendmail.php', {
-				method: "POST",
-				headers: { 'X-API-Key': API_KEY },
-				body: formData,
-				mode: "no-cors",
-			});
-
-			if (!response.ok) {
-				const err = await response.json();
-				throw new Error(err.error || 'Error desconocido');
-			}
-
-			const result = await response.json();
-			if (result.success) {
-				output.textContent = 'Correo enviado con éxito 🎉';
-				form.reset();
-				submitButton.textContent = 'Enviar';
-			} else {
-				output.textContent = 'Error: ' + result.error;
-			}
-		} catch (error) {
-			console.error('Error capturado:', error.message);
-			output.textContent = 'Error de red o del servidor.';
-			submitButton.textContent = 'Enviar';
-		} finally {
-			submitButton.disabled = false; // Rehabilitar botón después de la respuesta
-		}
-	});
+	const form = document.getElementById("form");
+  
+ 	async function handleSubmit(event) {
+   	event.preventDefault();
+   	let status = document.getElementById("my-form-status");
+   	let data = new FormData(event.target);
+   	fetch(event.target.action, {
+   		method: form.method,
+   		body: data,
+   		headers: {
+   		   'Accept': 'application/json'
+   		}
+   	}).then(response => {
+   	  	if (response.ok) {
+   	    	status.innerHTML = '¡Gracias por tu envío!';
+   	    	form.reset()
+   	  	} else {
+   	   	response.json().then(data => {
+   	   		status.innerHTML = Object.hasOwn(data, 'errors') ? data["errors"].map(error => error["message"]).join(", ") : '¡Uy! Hubo un problema al enviar tu formulario';
+   	   	})
+   	  	}
+   	}).catch(error => status.innerHTML = '¡Uy! Hubo un problema al enviar tu formulario');
+  }
+  form.addEventListener("submit", handleSubmit)
 
 })();

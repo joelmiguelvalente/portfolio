@@ -1,4 +1,4 @@
-# Portfolio v2.0
+# Portfolio v2.1
 
 ![portfolio vista previa](Screenshot.png)
 
@@ -8,12 +8,12 @@ Portfolio construido solo con **HTML5**, **CSS3** y **JAVASCRIPT**, este cuenta 
  * Light/Dark
 
 ### Imagenes utilizadas
- * Header: Foto de [Blake Connally][@blakeconnally] en [Unsplash][urlunsplash]
+ * Background: Foto de [Mo Eid][@mo-eid] en [Pexels][urlPexels]
 
 ### Redes 
  * 💻 [Linkedin](https://www.linkedin.com/in/joelmiguelvalente)
  * 💻 [Discord](https://discord.com/users/465203938900049920)
  * 💻 [X](https://x.com/JValenteM92)
 
-[@blakeconnally]: https://unsplash.com/es/@blakeconnally?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash
-[urlunsplash]: https://unsplash.com/es/s/fotos/codigo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+[@mo-eid]: https://www.pexels.com/es-es/@mo-eid-1268975/
+[urlPexels]: https://www.pexels.com/es-es/foto/ligero-paisaje-hombre-persona-8347501/
